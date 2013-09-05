@@ -1,0 +1,8 @@
+language: java
+jdk:
+  - openjdk6
+
+notifications:
+  recipients:
+    - carlos.montemuino@gmail.com
+  on_success: change
