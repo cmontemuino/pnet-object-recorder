@@ -1,7 +1,6 @@
 buildscript {
     repositories {
         mavenCentral()
-        mavenLocal()
     }
     dependencies {
         classpath 'com.mapvine:gradle-cobertura-plugin:1.0'

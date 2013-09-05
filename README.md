@@ -19,3 +19,20 @@ Please see NEWS.md in this directory, https://github.com/cmontemuino/pnet-object
 
 ## Bugs and Patches
 Report bugs to the GitHub issue tracker. Send patches as pull requests on GitHub.
+
+## Notes for People Having Problems with Repositories
+If you are behind a corporate firewall / proxy that prevents you accesing some of the repositories, then try to add a gradle init script:
+
+    allprojects {
+        buildscript {
+            repositories {
+                mavenLocal()
+            }
+        }
+        
+        repositories {
+            mavenLocal()
+        }
+    }
+    
+(Please look at http://www.gradle.org/docs/current/userguide/init_scripts.html to see where you need to put the script file.)
